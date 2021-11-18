@@ -27,6 +27,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+  var result = sum(9);
+  if (result !== 9) throw new Error('Expected sum(9) to be 9. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
