@@ -1,8 +1,14 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
+function sum(a, b){
+  return a + b;
+}
 
+function calc(operation, a, b) {
+  switch(operation) {
+    case 'add' : return sum(a, b);
+  }
 }
 
 // ==================================================
