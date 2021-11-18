@@ -34,6 +34,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+  var result = quotient(9);
+  if (result !== 9) throw new Error('Expected quotient(9) to be 9. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
