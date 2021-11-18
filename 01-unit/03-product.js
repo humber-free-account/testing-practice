@@ -27,6 +27,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
+  var result = product(5, 2, 1, 1, 1);
+  if (result !== 10) throw new Error('Expected product(5, 2, 1, 1, 1) to be 10. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
