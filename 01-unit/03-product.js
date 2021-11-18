@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function product(a, b=1) {
+function product(a=0, b=1) {
 return a*b;
 }
 
@@ -34,6 +34,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+  var result = product(9);
+  if (result !== 9) throw new Error('Expected product(9) to be 9. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
