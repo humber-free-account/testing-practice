@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function difference(a, b=0) {
+function difference(a=0, b=0) {
   return a-b;
 }
 
@@ -34,6 +34,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+  var result = difference();
+  if (result !== 0) throw new Error('Expected difference() to be 0. Received: ' + result);
 
   console.log('All tests passed successfully.');
 
