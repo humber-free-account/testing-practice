@@ -20,7 +20,9 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
-  
+  var result = sum(5, 6, 6, 1, 4);
+  if (result !== 11) throw new Error('Expected sum(5, 6, 6, 1, 4) to be 11. Received: ' + result);
+
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
