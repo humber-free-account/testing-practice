@@ -20,6 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return 0 when either of the numbers are 0.
+  var result = product(3, 0);
+  if (result !== 0) throw new Error('Expected product(3, 0) to be 0. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 3
