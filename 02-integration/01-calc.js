@@ -13,11 +13,16 @@ function multiply(a, b){
   return a * b;
 }
 
+function quotient(a, b){
+  return a / b;
+}
+
 function calc(operation, a, b) {
   switch(operation) {
     case 'add' : return sum(a, b);
     case 'subtract' : return subtract(a, b);
     case 'multiply' : return multiply(a, b);
+    case 'divide' : return quotient (a, b);
   }
 }
 
@@ -50,6 +55,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // It should return the correct quotient when the user provides: 'divide', 9, 3.
+  var result = calc('divide', 9, 3);
+  if (result !== 3) throw new Error('Expected calc("divide", 9, 3) to be 3. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
