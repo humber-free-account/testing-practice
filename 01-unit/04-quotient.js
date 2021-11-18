@@ -27,6 +27,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
+  var result = quotient(10, 2, 1, 1, 2);
+  if (result !== 5) throw new Error('Expected quotient(10, 2, 1, 1, 2) to be 5. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
