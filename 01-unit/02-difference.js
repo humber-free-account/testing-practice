@@ -20,6 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
+  var result = difference(15, 9, 1, 2, 3);
+  if (result !== 6) throw new Error('Expected difference(15, 9, 1, 2, 3) to be 6. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 3
